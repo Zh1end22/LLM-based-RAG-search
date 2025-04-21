@@ -9,8 +9,8 @@ from langchain.schema import HumanMessage, AIMessage
 import uuid
 
 # Load API keys
-SERPER_API_KEY = os.getenv("SERPER_API_KEY")
-OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
+SERPER_API_KEY = os.getenv("SERPER_API_KEY","paste your api key here")
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY","paste your api key here")
 
 # Initialize LangChain memory at the module level
 memory = ConversationBufferMemory(memory_key="chat_history", return_messages=True)
